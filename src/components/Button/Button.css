@@ -1,0 +1,25 @@
+.button {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 8px 30px;
+  width: 135px;
+  height: 42px;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+.accent {
+  background: #312eb5;
+}
+
+.accent:hover {
+  background: #292795;
+}
+
+.accent:active {
+  background: #1c1a79;
+}
