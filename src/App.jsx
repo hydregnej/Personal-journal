@@ -1,6 +1,13 @@
 import './App.css';
 import Button from './components/Button/Button';
 import JournalItem from './components/JournalItem/JournalItem';
+import CardButton from './components/CardButton/CardButton';
+
+import SideBar from './layouts/SideBar/SideBar';
+import Body from './layouts/Body/Body';
+import JournalList from './components/JournalList/JournalList';
+import JournalAddButton from './components/JournalAddButton/JournalAddButton';
+import Header from './components/Header/Header';
 
 function App() {
 	const data = [
@@ -17,21 +24,42 @@ function App() {
 	];
 
 	return (
-		<div>
-			<h1>Залоговок</h1>
-			<p>Текст</p>
-			<Button/>
-			<JournalItem
-        title={data[0].title}
-        date={data[0].date}
-        text={data[0].text}
-      />
-			<JournalItem
-        title={data[1].title}
-        date={data[1].date}
-        text={data[1].text}
-      />
+		<div className='app'>
+			<SideBar>
+				<Header/>
+
+				<JournalAddButton/>
+
+				<JournalList>
+
+					<CardButton>
+						<JournalItem
+							title={data[0].title}
+							date={data[0].date}
+							text={data[0].text}
+						/>
+					</CardButton>
+
+					<CardButton>
+						<JournalItem
+							title={data[1].title}
+							date={data[1].date}
+							text={data[1].text}
+						/>
+					</CardButton>
+
+				</JournalList>
+			</SideBar>
+
+			<Body>
+				<h1>Залоговок</h1>
+				<p>Текст</p>
+				<Button/>
+			</Body>
+
+
 		</div>
+    
 	);
 }
 
