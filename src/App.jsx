@@ -1,5 +1,4 @@
 import './App.css';
-import Button from './components/Button/Button';
 import JournalItem from './components/JournalItem/JournalItem';
 import CardButton from './components/CardButton/CardButton';
 
@@ -8,6 +7,7 @@ import Body from './layouts/Body/Body';
 import JournalList from './components/JournalList/JournalList';
 import JournalAddButton from './components/JournalAddButton/JournalAddButton';
 import Header from './components/Header/Header';
+import JournalForm from './components/JournalForm/JournalForm';
 
 function App() {
 	const data = [
@@ -52,9 +52,7 @@ function App() {
 			</SideBar>
 
 			<Body>
-				<h1>Залоговок</h1>
-				<p>Текст</p>
-				<Button/>
+				<JournalForm/>
 			</Body>
 
 

@@ -1,0 +1,17 @@
+.journal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.journal-form__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.journal-form__title {
+  font-size: 32px;
+}
+
+.journal-form__item {
+  max-width: 300px;
+}

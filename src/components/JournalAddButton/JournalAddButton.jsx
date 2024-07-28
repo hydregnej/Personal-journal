@@ -5,7 +5,7 @@ function JournalAddButton() {
 
 	return (
 		<CardButton className={'journal-add-button'}>
-			Новое воспоминание
+			<img src="../../../public/add remember.svg" alt="+" />	Новое воспоминание
 		</CardButton>
 	);
 }
